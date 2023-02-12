@@ -6,7 +6,7 @@ const bodyParser = require('body-parser');
 
 app.use(bodyParser.json());
 
-
+ 
 app.post("/api", async (req,res) => {
     const { lon,lat, sliderValue } = req.body;
     const instance = await createInstance({
